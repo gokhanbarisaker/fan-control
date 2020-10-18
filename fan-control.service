@@ -1,0 +1,10 @@
+[Unit]
+Description=Ice tower fan control service
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/sbin/fan-control.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
